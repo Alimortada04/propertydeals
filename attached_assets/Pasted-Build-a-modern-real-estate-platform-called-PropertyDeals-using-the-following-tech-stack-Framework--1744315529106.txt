@@ -1,0 +1,134 @@
+Build a modern real estate platform called PropertyDeals using the following tech stack:
+
+Framework & Stack:
+
+Next.js 14 (App Router)
+
+TypeScript
+
+TailwindCSS
+
+Use best practices for accessibility, responsive design, and component structure
+
+🧠 App Purpose & Vision
+PropertyDeals is a modern platform for discovering, managing, and selling off-market real estate deals. It should feel trustworthy, high-quality, minimal, and brand-aligned.
+
+Our users are:
+
+Buyers looking to browse and purchase off-market properties
+
+Sellers or wholesalers looking to list their deals
+
+The platform should feel like a mix between Redfin.com (real estate quality), Kaggle.com (clean UI, sidebar nav), and modern SaaS apps (clarity + utility).
+
+✅ Pages to Build:
+1. Homepage (/)
+Hero section with bold headline:
+“Discover and manage off-market real estate deals with confidence.”
+
+CTA button: “Browse Properties”
+
+Minimalist layout, with space for growth (testimonials, featured deals)
+
+2. Properties Catalog (/properties)
+Reference design: Redfin’s Milwaukee page
+
+Includes:
+
+Search bar (top center)
+
+Filter dropdowns (price range, beds, baths, status)
+
+Responsive grid of property cards
+
+Each card should show: image, price, address, beds, baths, sqft
+
+3. Property Detail Page (/p/[id])
+Reference design: Redfin Listing Page
+
+Includes:
+
+Hero image + photo gallery
+
+Property address, price, beds/baths, sqft
+
+Description
+
+Contact section
+
+Sidebar (or sticky panel) for key info or inquiry
+
+4. Seller Dashboard (/seller-dashboard)
+Basic private page (placeholder)
+
+Should be behind login eventually
+
+Add a “Welcome, [Name]” message and layout shell
+
+5. Sign In / Register Pages (/signin, /register)
+Simple form-based auth pages with email and password
+
+Styled, branded, responsive
+
+6. About Page (/about)
+Text content + image or founder vision
+
+Talk about mission, team, or transparency
+
+7. Contact Page (/contact)
+Simple form with name, email, message
+
+Styled and clean layout
+
+🎨 Brand Guidelines
+Fonts:
+
+Headers: League Spartan — Semi-Bold
+
+Body Text: Lato — Regular or Medium
+
+Load League Spartan from Google Fonts manually, and import Lato using next/font/google
+
+Colors:
+
+js
+Copy
+Edit
+brand: "#09261E",        // Primary Dark Green  
+brand-light: "#135341",  // Lighter Green  
+secondary: "#803344",    // Wine  
+accent: "#E59F9F",       // Salmon  
+silver: "#D8D8D8",       // Light gray  
+white: "#F5F5F5",  
+black: "#1C1C1C"
+Design Style:
+
+Clean, modern, subtle shadows, whitespace-heavy
+
+Responsive for desktop and mobile
+
+Emphasis on trust and simplicity
+
+🧭 UI/UX Layout Expectations:
+Sticky top navbar with logo, nav links, and right-aligned auth links
+
+Left-aligned collapsible sidebar (inspired by Kaggle.com)
+
+Always visible on desktop, collapses on mobile
+
+Global header and footer with minimal padding
+
+Use Tailwind utility classes (no external CSS)
+
+✅ Implementation Notes:
+Set up Tailwind config with custom colors and fonts
+
+Add responsive navigation
+
+Create real components, not just placeholder text
+
+Set up app/ folder using Next.js 14 App Router
+
+Structure pages and layouts clearly
+
+Let’s begin by building out the full homepage, properties catalog, and property detail page with real structure, layout, and responsive Tailwind styling.
